@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-server": "npm start",
-    "cy:run": "cypress run",
-    "cy:ci": "start-server-and-test start-server http://localhost:3000 cy:run"
+      "start": "node app.js",
+    "test": "node run-cypress-tests.js -r tap",
+    "testing": "node run-cypress-tests.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,6 @@
    "cypress": "^8.7.0"
   },
   "devDependencies": {
-     "cypress": "^8.7.0",
-     "start-server-and-test": "^1.14.0"
+     "cypress": "^8.7.0"
   }
 }
