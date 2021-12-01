@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "PORT=8080 node run-cypress-tests.js -r tap"
+    "start-server": "npm start",
+    "cy:run": "cypress run",
+    "cy:ci": "start-server-and-test start-server http://localhost:3000 cy:run"
   },
   "keywords": [],
   "author": "",
