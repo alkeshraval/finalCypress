@@ -6,7 +6,7 @@
   "scripts": {
       "start": "node app.js",
     "test": "node run-cypress-tests.js -r tap",
-    "testing": "node run-cypress-tests.js"
+    "testing": "node run-cypress-tests.js",
     "testChrome": "cypress run --headed --browser chrome",
   },
   "keywords": [],
